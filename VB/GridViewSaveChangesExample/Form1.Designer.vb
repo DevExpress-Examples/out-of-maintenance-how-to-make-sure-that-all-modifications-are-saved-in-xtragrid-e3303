@@ -28,8 +28,8 @@ Namespace GridViewSaveChangesExample
 			Me.components = New System.ComponentModel.Container()
 			Me.gridControl1 = New DevExpress.XtraGrid.GridControl()
 			Me.productsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-			Me.nwindDataSet = New GridViewSaveChangesExample.nwindDataSet()
-			Me.gridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
+            Me.nwindDataSet = New nwindDataSet()
+            Me.gridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
 			Me.colProductID = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.colProductName = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.colUnitPrice = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -38,8 +38,8 @@ Namespace GridViewSaveChangesExample
 			Me.colDiscontinued = New DevExpress.XtraGrid.Columns.GridColumn()
 			Me.panelControl1 = New DevExpress.XtraEditors.PanelControl()
 			Me.simpleButton1 = New DevExpress.XtraEditors.SimpleButton()
-			Me.productsTableAdapter = New GridViewSaveChangesExample.nwindDataSetTableAdapters.ProductsTableAdapter()
-			CType(Me.gridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.productsTableAdapter = New nwindDataSetTableAdapters.ProductsTableAdapter()
+            CType(Me.gridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me.productsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
 			CType(Me.gridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -166,8 +166,8 @@ Namespace GridViewSaveChangesExample
 		Private WithEvents simpleButton1 As DevExpress.XtraEditors.SimpleButton
 		Private nwindDataSet As nwindDataSet
 		Private productsBindingSource As System.Windows.Forms.BindingSource
-		Private productsTableAdapter As GridViewSaveChangesExample.nwindDataSetTableAdapters.ProductsTableAdapter
-		Private colProductID As DevExpress.XtraGrid.Columns.GridColumn
+        Private productsTableAdapter As nwindDataSetTableAdapters.ProductsTableAdapter
+        Private colProductID As DevExpress.XtraGrid.Columns.GridColumn
 		Private colProductName As DevExpress.XtraGrid.Columns.GridColumn
 		Private colUnitPrice As DevExpress.XtraGrid.Columns.GridColumn
 		Private colUnitsInStock As DevExpress.XtraGrid.Columns.GridColumn
